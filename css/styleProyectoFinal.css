@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:                 0;
+    padding:                0;
+    box-sizing:             border-box;
+}
+
+:root{
+    --primary-color:        #016241;
+    --secondary-color:      #d40032;
+    --colorExtra:           #fff;
+}
+
+/*Los selectores siguientes (html and body), tendran las misma propiedades y valores*/
+
+html, body{
+    font-family:            'Open Sans', sans-serif;
+    line-height:            1.5;
+    color:                  black;
+}
+
+ul{
+    list-style:             none;
+}
+
+.btn{
+  text-decoration:          none;
+  
+}
+.navBar a{
+    text-decoration:        none;
+    color:                  black;
+    text-transform:         uppercase;
+}
+
+img{
+    max-width:              100%;    
+}
+
+.social img{
+    max-width:              25px;
+}
+
+/*Empezando a modificar el navegador*/
+
+.navBar{
+    width:                  100%;
+    height:                 auto;
+    background-color:       var(--colorExtra);
+    padding:                20px;
+}
+
+.navBarContainer{
+    display:                flex;
+    justify-content:        space-between; /*Espacio entre elementos*/
+    align-items:            center;
+    max-width:              1300px;
+    margin:                 0 auto;
+}
+
+.navBar ul{
+    display:                flex;
+    align-items:            center;
+}
+.navBar li{
+    margin:                 0 15px;
+    font-weight:            bold;
+}
+
+.navBar a:hover{
+    color:                  orange;
+}
+
+.navBarRight .btnDarkOutline:hover{
+  cursor:     pointer;  
+}
+
+.navBarRight .btnDark:hover{
+  cursor:     pointer;
+  border-radius:          15px;
+  padding:                4px;
+  background-color:       white;
+  color: black;
+}
+
+.navBarBrand img{
+    width:                  50px;
+    height:                 50px;
+}
+
+.navBarLeft{
+    flex:                   10;
+    margin-left:            20px;
+}
+
+.navBarRight li:nth-child(2){ /*Pseudoclase*/
+    margin: 0 5px;
+}
+
+/*Empezando modificacion de estilo botones nav*/
+
+.btnDarkOutline{
+  border-radius:          15px;
+  padding:                4px;
+  background-color:       white;
+}
+
+.btnDark{
+  border-radius:          15px;
+  padding:                4px;
+  background-color:       black;
+  color:                  white;
+}
+
+/*Finalizando modificacion de estilo botones nav*/
+
+/*Fin de la modificación del navegador*/
+
+
+/*Inicio Modificaciones generales a las cajas*/
+
+.box{
+    margin-bottom:          30px;
+}
+
+.boxText{
+    max-width:              500px;
+    text-align:             center;
+    justify-self:           center;
+    padding:                20px 0;
+    margin:                 0 auto;
+    color:                  var(--colorExtra);
+}
+
+.textXl{
+    text-transform:         uppercase;
+    font-size:              30px;
+    color:                  white;
+  letter-spacing:           7px;
+}
+
+.textCenter{
+      text-align:             center;
+}
+
+.textMd{
+  color:                      white;
+  padding:                    1.5rem;
+  font-weight:                light;
+}
+
+.textMd a{
+  color:                      white;
+}
+
+.boxText .btn{
+    margin-top:             20px;
+  border-radius:            15px;
+  border:                   solid 1px white;
+  padding:                  4px;
+  color:                    white;
+  text-tramsform:           capitalize;
+  font-size:                11px;
+}
+
+.bgSecondary{
+  background-color:         var(--secondary-color);
+}
+
+/*Inicio Modificaciones generales a las cajas*/
+
+/*Inicio de las modificaciones a la caja A*/
+
+.aBox{
+  padding-top:              1rem;
+  padding-bottom:           1rem;
+}
+
+.bgPrimary{
+  background-color:         var(--primary-color);
+}
+
+.boxInner{
+    max-width:              700px;
+    margin:                 0 auto;
+}
+
+/*Fin de las modificaciones a la caja A*/
+
+
+/*Estilos para los grid*/
+
+.gridCol2{
+    display:                grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap:                    2rem;
+    align-items:            center;
+    justify-content:        space-between;
+}
+
+.gridReverse :first-Child{
+    order:                  2;
+}
+
+
+
+.footerText{
+  font-size:                14px;
+}
+
+.footerContainer{
+  margin:         auto 1.7rem;
+  padding-top:    2rem;
+  border-top: solid 2px grey;
+}
